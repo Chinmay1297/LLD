@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="Awj79yKCtbEfsN3Hs85L">
-    <mxGraphModel dx="1571" dy="931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="624" dy="377" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -251,7 +251,7 @@
         <mxCell id="V1XVYtCe2MvbP4u2Uib0-71" parent="V1XVYtCe2MvbP4u2Uib0-77" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="ParkingManager" vertex="1">
           <mxGeometry height="210" width="220" as="geometry" />
         </mxCell>
-        <mxCell id="V1XVYtCe2MvbP4u2Uib0-72" parent="V1XVYtCe2MvbP4u2Uib0-77" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="List&amp;lt;IparkingSlot&amp;gt; slots;&lt;div&gt;FairCalculator fairCalci;&lt;/div&gt;&lt;div&gt;IParkingSlot CheckAvailableSpot();&lt;/div&gt;&lt;div&gt;Ticket AssignSlot();&lt;/div&gt;&lt;div&gt;void ReleaseSlot();&lt;/div&gt;" vertex="1">
+        <mxCell id="V1XVYtCe2MvbP4u2Uib0-72" parent="V1XVYtCe2MvbP4u2Uib0-77" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="List&amp;lt;IparkingSlot&amp;gt; slots;&lt;div&gt;IParkingSlot CheckAvailableSpot();&lt;/div&gt;&lt;div&gt;Ticket AssignSlot();&lt;/div&gt;&lt;div&gt;void ReleaseSlot();&lt;/div&gt;" vertex="1">
           <mxGeometry height="182" width="213.88888888888889" x="6.111111111111111" y="21" as="geometry" />
         </mxCell>
         <mxCell id="V1XVYtCe2MvbP4u2Uib0-84" edge="1" parent="1" source="V1XVYtCe2MvbP4u2Uib0-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="V1XVYtCe2MvbP4u2Uib0-78">
