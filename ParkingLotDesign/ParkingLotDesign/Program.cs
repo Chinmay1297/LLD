@@ -1,10 +1,13 @@
-﻿namespace ParkingLotDesign
+﻿using ParkingLotDesign.Classes;
+
+namespace ParkingLotDesign
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            ParkingLot parkingLot = new ParkingLot();
+
         }
     }
 }
