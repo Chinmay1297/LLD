@@ -28,7 +28,7 @@ namespace ParkingLotDesign.Classes.ParkingSlots
 
         public bool IsAvailable()
         {
-            return vehicle != null ? true : false;
+            return vehicle == null ? true : false;
         }
 
         public IParkingSlot ParkVehicle(IVehicle vehicleToPark)

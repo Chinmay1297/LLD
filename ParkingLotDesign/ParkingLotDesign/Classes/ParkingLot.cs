@@ -20,7 +20,7 @@ namespace ParkingLotDesign.Classes
 
         public Ticket? EnterVehicle(IVehicle vehicle)
         {
-            IParkingSlot? availableSlot = pm.CheckAvailableSlot();
+            IParkingSlot? availableSlot = pm.CheckAvailableSlot(vehicle.GetVehicleSize());
             if(availableSlot != null)
             {
                 availableSlot = pm.AssignSlot(vehicle, availableSlot);

@@ -39,7 +39,7 @@ namespace ParkingLotDesign.Classes
                 ParkingSlots[EVehicleSize.Large].Add(new LargeSlot());
             }
         }
-        public IParkingSlot CheckAvailableSlot()
+        public IParkingSlot? CheckAvailableSlot(EVehicleSize vehicleSize)
         {
             foreach(IParkingSlot slot in ParkingSlots[EVehicleSize.Small])
             {
@@ -51,7 +51,7 @@ namespace ParkingLotDesign.Classes
 
             foreach (IParkingSlot slot in ParkingSlots[EVehicleSize.Medium])
             {
-                if (slot.IsAvailable())
+                if (slot.IsAvailable() && (vehicleSize == EVehicleSize.Small || vehicleSize == EVehicleSize.Medium))
                 {
                     return slot;
                 }
@@ -59,14 +59,15 @@ namespace ParkingLotDesign.Classes
 
             foreach (IParkingSlot slot in ParkingSlots[EVehicleSize.Large])
             {
-                if (slot.IsAvailable())
+                if (slot.IsAvailable() && (vehicleSize == EVehicleSize.Small || vehicleSize == EVehicleSize.Medium || vehicleSize == EVehicleSize.Large))
                 {
                     return slot;
                 }
             }
 
             Console.WriteLine("Parking Space is full, please come after some time");
-            throw new Exception("Parking Space is full, please come after some time");
+            return null;
+            //throw new Exception("Parking Space is full, please come after some time");
         }
 
         public IParkingSlot AssignSlot(IVehicle vehicle, IParkingSlot parkingSlot)
