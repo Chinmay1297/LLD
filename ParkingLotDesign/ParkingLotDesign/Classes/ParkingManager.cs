@@ -43,7 +43,7 @@ namespace ParkingLotDesign.Classes
         {
             foreach(IParkingSlot slot in ParkingSlots[EVehicleSize.Small])
             {
-                if(slot.IsAvailable())
+                if(slot.IsAvailable() && vehicleSize == EVehicleSize.Small)
                 {
                     return slot;
                 }

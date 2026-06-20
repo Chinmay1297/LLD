@@ -23,7 +23,7 @@ namespace ParkingLotDesign.Classes.ParkingSlots
 
         public EVehicleSize GetParkingSlotSize()
         {
-            return vehicle.GetVehicleSize();
+            return EVehicleSize.Small;
         }
 
         public bool IsAvailable()
